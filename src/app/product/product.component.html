@@ -1,0 +1,54 @@
+<style>
+  .titulo {
+    text-align: center;
+    font-size: 40px;
+    color: #418fde;
+    font-weight: 500s;
+  }
+  
+  span {
+    font-size: 20px;
+  }
+  
+  button {
+    width: 200px;
+    height: 61px;
+    background-color: #418fde;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+  }
+</style>
+<div class="container bg-light my-5">
+  <div class="row">
+    <div class="col-12 titulo">
+      Dolex Gripa 12 Tabs Congestión nasal, Dolor cabeza y fiebre<br>
+      <br>
+      <img src="https://lh3.googleusercontent.com/lS8_-MATUo82zYaBgwmZ_1KSSDEOlRDpB-2EmzZQlgw5YaVvSSjK9_kJIYePzCewf2G1fyQ54v9_zNsq6VTFOxWffK-_OkzIVZE9">
+      <img src="https://lh3.googleusercontent.com/zq7FAApZmK-tGLnmcaQzlE3Wk-3bRk2wtZ-WmxUo_dcg-xWqj_wF4s0Baz7ATSrXD8QviRvKimPBb2sW-x7C5n0CcaDAqOxSOmV7">
+      <br>
+      <br>
+      <span>
+        x12Tab.GSK Acetaminofén Fenilefrina Clorfenamina
+      </span>
+      <br>
+      <span>
+        precio: $11.200
+      </span>
+      <br>
+      <br>
+      <button (click)="clickAumentar()">Aumentar</button> {{quantity}} <button (click)="clickDisminuir()">Disminuir</button>
+      <br><br>
+      <button (click)="clickComprar()">Comprar</button>
+      <br>
+      <span class="text-success" *ngIf="showText">
+        Compra exitosa
+      </span>
+      <br>
+      <br>
+    </div>
+  </div>
+  <ngx-json-ld [json]="schema"></ngx-json-ld>
+</div>
